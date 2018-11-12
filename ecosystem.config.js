@@ -6,12 +6,12 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'root',
+      key: '~/.ssh/iona-Kati-Frantz-nwsQX3',
+      host : '167.99.145.202',
       ref  : 'origin/master',
-      repo : '',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      repo : 'git@github.com:bahdcoder/express-test-app.git',
+      path : '/home/iona'
     }
   }
 };
