@@ -2,6 +2,9 @@ module.exports = {
   apps : [{
     name: 'MY APP.JS APPLICATION',
     script: 'app.js',
+    env_production: {
+      NODE_ENV: 'production'
+    }
   }],
 
   deploy : {
